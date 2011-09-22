@@ -8,7 +8,7 @@ sub get_number_at {
     my ($class, $length) = @_;
 
     if ( $length == 0 ) {
-        Carp::croak("can't calc 0..."); 
+        return 0;
     }
 
     if ( $length == 1 or $length == 2 ) {
